@@ -1,0 +1,76 @@
+
+<html>
+  <style>
+  body {
+  font-family: "Comic Sans MF",cursive, serif;
+  background: #fead09;
+  }
+  </style>
+  <head>
+    <title>My Homepage</title>
+        <table>
+          <tr>
+            <td> <img src = "Flower Boy.jpg" alt="Flower Boy" align="left" height="150" width="150"> </td>
+          </tr>
+        </table>
+      <center>
+
+            <p><b><h1>Flower Man</h1></b></p>
+        <script type ="text/javascript">
+            var parent = new Date();
+            var theCurrentMonth = parent.getMonth();
+            var dayOfMonth = parent.getDate();
+            var currentHours = parent.getHours();
+            var currentMinutes = parent.getMinutes();
+            if (currentMinutes < 10) {
+              document.write("The current time is " + currentHours + ":0" + currentMinutes + ".");
+            }
+              else document.write("The current time is " + currentHours + ":" + currentMinutes + ".");
+            document.write(" The current date is " + theCurrentMonth + "/" + dayOfMonth + ".");
+        </script>
+        <br> </br>
+        <script type ="text/javascript">
+        var name = prompt("What is your name?");
+        document.write("Hello, " + name + ".");
+        </script>
+        <br></br>
+        <input type="text" id="tb" name="tb" />
+        <input type="button" value="RandomNumber" onclick= "funcRandom();"/>
+        <script type="text/javascript">
+          function funcRandom(){
+            var rnd = Math.floor(Math.random() * 100) * 100 + 1;
+            document.getElementById('tb').value = rnd;
+          }
+        </script>
+        <br>
+        <input type="button" value="Extract Current Hours." onclick= "funcHours();" />
+        <script type="text/javascript">
+          function funcHours(){
+            var extractHours = "The current hours is the following: " + currentHours;
+            alert(extractHours);
+          }
+        </script>
+        <br>
+        <input type="button" value="Get Current Month." onclick= "funcDate();" />
+        <script type="text/javascript">
+          function funcDate(){
+            var getDate = "This month is " + theCurrentMonth;
+            alert(getDate);
+          }
+        </script>
+        <br>
+        <input type="button" value="Round a Number!" onclick= "funcNum();" />
+        <script type="text/javascript">
+            function funcNum(){
+              var num = prompt("What number would you like rounded?")
+              var newNum = Math.round(num);
+              alert("I have successfully rounded " + num + " to " + newNum + ".");
+            }
+
+          </script>
+        </center>
+        </script>
+      </center>
+      </center>
+  </head>
+</html>
