@@ -1,0 +1,31 @@
+<html>
+<body>
+  <h2>Browser Controls</h2>
+  <p id="browser"></p>
+
+  <script>
+    function goBack(){
+      window.history.back()
+    }
+    function goFwd(){
+      window.history.forward()
+    }
+    function newPage(){
+      window.location.assign("http://www.espn.com");
+    }
+    function funcTimer(){
+      alert('The Penguins are going to the playoffs!');
+    }
+    document.getElementById("browser").innerHTML = "The URL of the page is " + window.location.href +  ". The path is " + window.location.pathname + "."
+    var x = "Cookies Enabled: " + navigator.cookieEnabled;
+    document.write(x)
+
+  </script>
+  <br><br>
+  <button onclick="setTimeout(funcTimer,9000)">9 seconds.</button>
+  <button onclick="goBack()">Go Back</button>
+  <button onclick="goFwd()">Go Forward</button>
+  <button onclick="newPage()">Redirect Button</button>
+
+</body>
+</html>

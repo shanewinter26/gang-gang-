@@ -1,0 +1,32 @@
+<html>
+<body>
+
+  <h2>Constructors</h2>
+  <p id="constructor"></p>
+
+  <script>
+    //Constructor for Vehicle object
+    function Vehicle(make,model,year,color){
+      this.make = make;
+      this.model = model;
+      this.year = year;
+      this.color = color;
+    }
+
+    var nissanVersa = new Vehicle("Nissan","Versa",2019,"blue");
+    var fordFocus = new Vehicle("Ford","Focus",2019,"blue");
+    var toyataCamry = new Vehicle("Toyata","Camry",2019,"blue");
+
+    //Append object Vehicle
+    Vehicle.prototype.tireBrand = "Good Year";
+    Vehicle.prototype.powerSource = "electric";
+    Vehicle.prototype.seatType = "leather";
+
+    var teslaModel3 = new Vehicle("Tesla","Model 3",2019,"black");
+
+    //Display the results
+    document.getElementById("constructor").innerHTML = "The " + teslaModel3.make + " " + teslaModel3.model + " is an electric car with " + teslaModel3.seatType + " seats."
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<body>
+
+  <h2>Constructors</h2>
+  <p id="constructor"></p>
+
+  <script>
+  //Constructor for Vehicle object
+  function Vehicle(make,model,year,color){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+  }
+
+  var nissanVersa = new Vehicle("Nissan","Versa",2019,"blue");
+  var fordFocus = new Vehicle("Ford","Focus",2019,"blue");
+  var toyataCamry = new Vehicle("Toyata","Camry",2019,"blue");
+
+  //Display the results
+  document.getElementById("constructor").innerHTML = "The car is a " + toyataCamry.color + " " + toyataCamry.make + " " + toyataCamry.model + ".";
+  </script>
+
+</body>
+</html>
