@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162 Finals Question 2</title>
+<script>
+
+//I know what I want to do here I'm just not sure how to make the function check all of the arguments. Checking the arguments of the function and using the modulus statement to test if a number is odd. If number is odd then 1 gets added to the oddNums variable.
+function countOddNumbers() {
+  var oddNums = 0;
+  if (countOddNumbers % 2 != 0) {
+    oddNums = oddNums + 1;
+  }
+  return oddNums;
+}
+
+// the following alert should show 3
+alert(countOddNumbers([1, 2, 3, 4, 5]));
+
+// the following alert should show 1
+alert(countOddNumbers([10, 12, 13, 14, 16]));
+
+</script>
+<body>
+</body>
+</html>
